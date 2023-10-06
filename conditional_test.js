@@ -28,51 +28,52 @@ else{
 }
 
 
-// Q4. Write a single line of code using the ternary operator to check if a variable value is defined (not undefined) and has a truthy value. If it does, store the result in a variable 'isValid'.
+// Q4. Write a single line of code using the ternary
+//  operator to check if a variable value is defined (not undefined) and has a truthy value. If it does, store the result in a variable 'isValid'.
 let raju = 13;
-const isValid = typeof raju !== 'undefined' ? true : false;
+const isValid = typeof raju !== 'undefined' && raju ? true : false;
 console.log(isValid);
 console.log(raju);
 
 // Q3.
 
-let number = 153
-let sum = 0
-let check = number
-let armnum = 0
-let len = number.toString().length
-let power = 0
-while (number != 0) {
-  armnum = number % 10
-  power = Math.pow(armnum, len)
-  sum = sum + power
-  num = parseInt(number/10)
-}
-if (check == sum){
-  console.log("armstrong")
-}
-else
-console.log("armstrong not");
+// let number = 153
+// let sum = 0
+// let check = number
+// let armnum = 0
+// let len = number.toString().length
+// let power = 0
+// while (number != 0) {
+//   armnum = number % 10
+//   power = Math.pow(armnum, len)
+//   sum = sum + power
+//   num = parseInt(number/10)
+// }
+// if (check == sum){
+//   console.log("armstrong")
+// }
+// else
+// console.log("armstrong not");
 
 // Q2
 
 
-  let rem, temp , result =0;
-  let number2 = 1221;
-  temp =number2
-  while (number2 >0 )
-  {
-    rem =number2%10
-    number2 =parseInt(number2/10)
-    result=result*10+rem
-  }
-  if(result == temp){
-    console.log("congratulation number is palindrome")
-  }
-  else{
-    console.log("better luck next time  number  not is palindrome")
+  // let rem, temp , result =0;
+  // let number2 = 1221;
+  // temp =number2
+  // while (number2 >0 )
+  // {
+  //   rem =number2%10
+  //   number2 =parseInt(number2/10)
+  //   result=result*10+rem
+  // }
+  // if(result == temp){
+  //   console.log("congratulation number is palindrome")
+  // }
+  // else{
+  //   console.log("better luck next time  number  not is palindrome")
 
-  }
+  // }
 
 
 

@@ -26,7 +26,7 @@
 // }
 
 
-arr= ['Simran kaur', 'Taniya saini', 'Rajesh kumar', 'Aman mishra']
+arr= ['Simrandeep kaur', 'Taniya saini', 'Rajesh kumar', 'Aman mishra']
 arr.sort(function(a , b){
     const firstsurname = a.split(' ') [1]
     const secondsurname = b.split(' ') [1]
@@ -35,5 +35,7 @@ arr.sort(function(a , b){
     }
     return firstsurname.length < secondsurname.length  ? -1 :1 
 })
+
+console.log(arr);
 
 
