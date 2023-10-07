@@ -40,14 +40,17 @@ console.log(store(2));
 // when called n times, returns the string "HelloWorld".
 
 function lambdaDepth(k) {
-  k = depth(k);
-  function depth(num) {
-    if (isNaN(num) || !Number.isInteger(num)) {
-      return "Please enter non negative integer";
-    }
-    return num === 0 ? "hello duniya " : "bye duniya";
+  if (typeof k !== "number" || k < 0) {
+    return "please enter  a non-negative integer.";
   }
-  return k;
+  let depth = function () {
+    return "hello world";
+  };
+  for (let i = 0; i <= k; i++) {
+    depth();
+  }
+  return depth;
 }
-console.log(lambdaDepth(0));
-
+console.log(lambdaDepth(-1));
+console.log(lambdaDepth(0)());
+console.log(lambdaDepth(1)());
